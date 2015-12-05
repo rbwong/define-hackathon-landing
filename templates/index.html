@@ -1,8 +1,375 @@
 {% extends "base.html" %}
 
-{% block form %}
+{% load static %}
+{% load staticfiles %}
+
+{% block body %}
+<!-- Intro text -->
+    <div class="title bg-color-intro">
+       <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">"Smile, breathe and go slowly." -  Thích Nhất Hạnh</h1>
+       <div class="hr"></div>
+    </div>
+    <!-- /intro text -->
+
+
+    <!-- 3 images columns -->
+    <div class="padding-top">
+
+      <div class="container">
+
+        <div class="row padding-bottom">
+
+          <div class="col-md-12">
+             <div class="col-md-4 col-sm-4">
+               <div class="media">
+               <img src="{% static "img/picture1.jpg" %}" alt="picture">
+               <div class="media-body">
+                <h2>SMILE</h2>
+               </div>
+               </div>
+             </div>
+             <div class="col-md-4 col-sm-4">
+               <div class="media">
+               <img src="{% static "img/picture2.jpg" %}" alt="picture">
+               <div class="media-body">
+                <h2>BREATHE</h2>
+               </div>
+               </div>
+             </div>
+             <div class="col-md-4 col-sm-4">
+               <div class="media">
+               <img src="{% static "img/picture3.jpg" %}" alt="picture">
+               <div class="media-body">
+                <h2>GO SLOWLY</h2>
+               </div>
+               </div>
+             </div>
+          </div>
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+
+      </div><!-- /padding-top -->
+
+
+      <!-- Biography section -->
+      <div class="container">
+
+          <div class="row">
+             <h2 id="biography">biography</h2>
+
+             <div class="col-md-8 col-xs-offset-2">
+             <p class="space"> Around us, life bursts with miracles--a glass of water, a ray of sunshine, a leaf, a caterpillar, a flower, laughter, raindrops. If you live in awareness, it is easy to see miracles everywhere. Each human being is a multiplicity of miracles.
+            Eyes that see thousands of colors, shapes, and forms; ears that hear a bee flying or a thunderclap; a brain that ponders a speck of dust as easily as the entire cosmos; a heart that beats in rhythm with the heartbeat of all beings.
+              </p>
+             <p class="space"> Breath is the bridge which connects life to consciousness, which unites your body to your thoughts. Whenever your mind becomes scattered, use your breath as the means to take hold of your mind again.
+             </p>
+
+             <div class="text-center">
+              <a href="mailto:minimalist@yahoo.com" class="orange-btn btn wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">get in touch</a>
+             </div>
+             </div>
+          </div>
+      </div>
+      <!-- /biography section -->
+
+
+      <!-- Services section -->
+      <div class="title bg-color-services">
+         <h1 id="services">Services</h1>
+         <div class="hr"></div>
+      </div>
+
+      <div class="container">
+         <div class="row padding-bottom">
+             <div class="col-md-12 col-sm-12">
+               <img src="{% static "img/picture4.jpg" %}" alt="picture1" class="top-services">
+             </div>
+
+             <!-- Services Panels -->
+             <div class="col-md-3 col-sm-6">
+                <div class="services1 services1-default text-center">
+                   <div class="services1-body">
+                     <h2 class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><strong>Landscape</strong> photography</h2>
+                       <p>The wisdom of life consists in the elimination of non-essentials.</p>
+                   </div>
+                </div>
+              </div>
+              <!-- /services panel -->
+
+              <div class="col-md-3 col-sm-6">
+                 <div class="services1 services1-default text-center">
+                    <div class="services1-body">
+                       <h2 class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><strong>Wildlife</strong> photography</h2>
+                        <p>The wisdom of life consists in the elimination of non-essentials.</p>
+                    </div>
+                 </div>
+              </div>
+              <!-- /services panel -->
+
+              <div class="col-md-3 col-sm-6">
+                 <div class="services1 services1-default text-center">
+                    <div class="services1-body">
+                        <h2 class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><strong>Black &amp; white</strong> photography</h2>
+                        <p>The wisdom of life consists in the elimination of non-essentials.</p>
+                    </div>
+                 </div>
+               </div>
+               <!-- /services panel -->
+
+               <div class="col-md-3 col-sm-6">
+                  <div class="services1 services1-default text-center">
+                    <div class="services1-body">
+                        <h2 class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><strong>Organic Food</strong> photography</h2>
+                        <p>The wisdom of life consists in the elimination of non-essentials.</p>
+                    </div>
+                  </div>
+               </div>
+               <!-- /services panel -->
+
+
+         </div><!-- /row -->
+      </div><!-- /container -->
+
+
+      <!-- Gallery section -->
+      <div class="title bg-color-gallery">
+         <h1 id="gallery" class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">Gallery</h1>
+         <div class="hr"></div>
+      </div>
+
+      <div class="container">
+
+        <div class="row margin-top">
+            <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
+                <div class="gallery-page-wrap">
+                    <img src="{% static "img/gallery1.jpg" %}" alt="photo">
+                        <div class="overlay">
+                            <div class="gallery-page-inner">
+                                <h3><a href="index.html">Landscape</a> </h3>
+                                <a href="http://marijazaric.com/minimalist-theme/images/gallery1a.jpg" data-lightbox="image-1" data-title="Photo1"> View   <i class="fa fa-angle-double-right"></i>
+</a>
+                            </div>
+                        </div>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
+                <div class="gallery-page-wrap">
+                    <img src="{% static "img/gallery2.jpg" %}" alt="photo">
+                        <div class="overlay">
+                            <div class="gallery-page-inner">
+                                <h3><a href="index.html">Landscape</a> </h3>
+                                <a href="http://marijazaric.com/minimalist-theme/images/gallery2a.jpg" data-lightbox="image-1" data-title="Photo2">View <i class="fa fa-angle-double-right"></i>
+</a>
+                            </div>
+                        </div>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
+                <div class="gallery-page-wrap">
+                    <img src="{% static "img/gallery3.jpg" %}" alt="photo">
+                        <div class="overlay">
+                            <div class="gallery-page-inner">
+                                <h3><a href="index.html">Wildlife</a> </h3>
+                                <a href="http://marijazaric.com/minimalist-theme/images/gallery3a.jpg" data-lightbox="image-1" data-title="Photo3">View <i class="fa fa-angle-double-right"></i>
+</a>
+                            </div>
+                        </div>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
+                <div class="gallery-page-wrap">
+                    <img src="{% static "img/gallery4.jpg" %}" alt="photo">
+                        <div class="overlay">
+                            <div class="gallery-page-inner">
+                                <h3><a href="index.html">Wildlife</a> </h3>
+                                <a href="http://marijazaric.com/minimalist-theme/images/gallery4a.jpg" data-lightbox="image-1" data-title="Photo4">View <i class="fa fa-angle-double-right"></i>
+</a>
+                            </div>
+                        </div>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
+                <div class="gallery-page-wrap">
+                    <img src="{% static "img/gallery5.jpg" %}" alt="photo">
+                        <div class="overlay">
+                            <div class="gallery-page-inner">
+                                <h3><a href="index.html">Black and white</a> </h3>
+                                <a href="http://marijazaric.com/minimalist-theme/images/gallery5a.jpg" data-lightbox="image-1" data-title="Photo5">View <i class="fa fa-angle-double-right"></i>
+</a>
+                            </div>
+                        </div>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
+                <div class="gallery-page-wrap">
+                    <img src="{% static "img/gallery6.jpg" %}" alt="photo">
+                        <div class="overlay">
+                            <div class="gallery-page-inner">
+                                <h3><a href="index.html">Black and white</a> </h3>
+                                <a href="http://marijazaric.com/minimalist-theme/images/gallery6a.jpg" data-lightbox="image-1" data-title="Photo6">View <i class="fa fa-angle-double-right"></i>
+</a>
+                            </div>
+                        </div>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
+                <div class="gallery-page-wrap">
+                    <img src="{% static "img/gallery7.jpg" %}" alt="photo">
+                        <div class="overlay">
+                            <div class="gallery-page-inner">
+                                <h3><a href="index.html">Food</a> </h3>
+                                <a href="http://marijazaric.com/minimalist-theme/images/gallery7a.jpg" data-lightbox="image-1" data-title="Photo7">View <i class="fa fa-angle-double-right"></i>
+</a>
+                            </div>
+                        </div>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
+                <div class="gallery-page-wrap">
+                    <img src="{% static "img/gallery8.jpg" %}" alt="photo">
+                        <div class="overlay">
+                            <div class="gallery-page-inner">
+                                <h3><a href="index.html">Food</a> </h3>
+                                <a href="http://marijazaric.com/minimalist-theme/images/gallery8a.jpg" data-lightbox="image-1" data-title="Photo8">View <i class="fa fa-angle-double-right"></i>
+</a>
+                            </div>
+                        </div>
+                </div>
+             </div>
+
+        </div><!-- /row -->
+
+      </div><!-- /container -->
+
+
+      <!-- Pricing section -->
+      <div class="title bg-color-pricing">
+        <h1 id="pricing">Pricing</h1>
+        <div class="hr"></div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+             <!-- Pricing tables -->
+             <div class="flat">
+                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                     <ul class="plan">
+                        <li class="plan-name">
+                        Landscape photography
+                        </li>
+                        <li class="plan-price">
+                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
+                        </li>
+                        <li>
+                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
+                        </li>
+                        <li>
+                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
+                        </li>
+                        <li>
+                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
+                        </li>
+                        <li class="plan-action">
+                        <a href="index.html" class="action-btn btn">order now</a>
+                        </li>
+                     </ul>
+                 </div>
+
+                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                     <ul class="plan featured">
+                        <li class="plan-name">
+                        Black &amp; white photography
+                        </li>
+                        <li class="plan-price">
+                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
+                        </li>
+                        <li>
+                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
+                        </li>
+                        <li>
+                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
+                        </li>
+                        <li>
+                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
+                        </li>
+                        <li class="plan-action">
+                        <a href="index.html" class="action-btn btn">order now</a>
+                        </li>
+                     </ul>
+                 </div>
+
+                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                     <ul class="plan">
+                        <li class="plan-name">
+                        Wildlife photography
+                        </li>
+                        <li class="plan-price">
+                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
+                        </li>
+                        <li>
+                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
+                        </li>
+                        <li>
+                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
+                        </li>
+                        <li>
+                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
+                        </li>
+                        <li class="plan-action">
+                        <a href="index.html" class="action-btn btn">order now </a>
+                        </li>
+                     </ul>
+                 </div>
+
+             </div>
+             <!-- /pricing tables -->
+
+        </div><!-- /row -->
+
+     </div><!-- /container -->
+
+
+     <!-- Contact section -->
+     <div class="title bg-color-contact">
+        <h1 id="contact">Contact</h1>
+        <div class="hr"></div>
+      </div>
+
+     <div class="container">
+         <div class="row padding-bottom">
+             <div class="col-md-12 col-sm-12">
+               <img src="{% static "img/picture5.jpg" %}" alt="picture" class="top-contact">
+             </div>
+             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+               <h4><strong>Address</strong>
+               <span>The wisdom of life consists in the elimination of non-essentials.</span>
+               <span>111 Lynnhaven Road, Virginia Beach, VA 22233 </span>
+               </h4>
+             </div>
+             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+               <h4><strong>Tel / email</strong>
+               <span>The wisdom of life consists in the elimination of non-essentials.</span>
+               <span>tel: 757-111-1111</span>
+               <span>email: <a href="mailto:minimalist@yahoo.com">minimalist@yahoo.com</a></span>
+               </h4>
+             </div>
+             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+               <h4><strong>Follow me</strong>
+               <span>The wisdom of life consists in the elimination of non-essentials.</span>
+               <span><a href=""><img src="{% static "img/facebook.png" %}" alt="facebook"></a>
+               <a href=""><img src="{% static "img/twitter.png" %}" alt="twitter" class="contact-icons"></a></span>
+               </h4>
+             </div>
+
+         </div><!-- /row -->
+         <div class="contact-bottom"></div>
+     </div><!-- /container -->
+{% endblock %}
+
 <form method = "POST" > {% csrf_token %}
   {{ form.as_p }}
   <button class = "" type = "submit">Book Now </button>
 </form>
-{% endblock %}
