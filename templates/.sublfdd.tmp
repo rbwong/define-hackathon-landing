@@ -1,0 +1,286 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% load staticfiles %}
+
+{% block body %}
+    <!-- HEADER -->
+    <div id="particles-js"></div>
+    <section id="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="{% static "img/logo.png" %}" alt="logo" class="logo-header">
+                </div>
+            </div> <br>
+            <div class="container">
+                <div class="col-sm-12">
+                    <p class="header-details">January 28-30, 2016 | University of the Philippines Diliman</p>
+                </div>
+            </div> <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a href="#register" class="header-button orange-btn btn wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors-section">
+        <div class="title bg-color-intro">
+            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Sponsors</h1>
+            <div class="hr"></div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    {% for sponsor in sponsors %}
+                      <div class="centered-col col-lg-3 col-md-4 col-sm-6">
+                        <div class="media">
+                         <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
+                          <div class="media-body">
+                            <h2>{{ sponsor.name }}</h2>
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="epsilonchi-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="{% static "img/seal.png" %}" alt="logo" class="logo-seal">
+                </div>
+
+                <h2 id="biography">EPSILON CHI</h2>
+
+                <div class="col-md-8 col-xs-offset-2">
+                    <p class="space"> Around us, life bursts with miracles--a glass of water, a ray of sunshine, a leaf, a caterpillar, a flower, laughter, raindrops. If you live in awareness, it is easy to see miracles everywhere. Each human being is a multiplicity of miracles.
+                    Eyes that see thousands of colors, shapes, and forms; ears that hear a bee flying or a thunderclap; a brain that ponders a speck of dust as easily as the entire cosmos; a heart that beats in rhythm with the heartbeat of all beings.
+                    </p>
+                    <p class="space"> Breath is the bridge which connects life to consciousness, which unites your body to your thoughts. Whenever your mind becomes scattered, use your breath as the means to take hold of your mind again.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="mailto:minimalist@yahoo.com" class="orange-btn btn wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">get in touch</a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="title bg-color-intro">
+            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Contact</h1>
+            <div class="hr"></div>
+        </div>
+
+        <div class="container">
+            <div class="row padding-bottom">
+                <div class="col-md-12 col-sm-12">
+                    <img src="{% static "img/picture5.jpg" %}" alt="picture" class="top-contact">
+                </div>
+                <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                    <h4><strong>Address</strong>
+                        <span>The wisdom of life consists in the elimination of non-essentials.</span>
+                        <span>111 Lynnhaven Road, Virginia Beach, VA 22233 </span>
+                    </h4>
+                </div>
+                <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                    <h4><strong>Tel / email</strong>
+                        <span>The wisdom of life consists in the elimination of non-essentials.</span>
+                        <span>tel: 757-111-1111</span>
+                        <span>email: <a href="mailto:minimalist@yahoo.com">minimalist@yahoo.com</a></span>
+                    </h4>
+                </div>
+                <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                    <h4><strong>Follow me</strong>
+                        <span>The wisdom of life consists in the elimination of non-essentials.</span>
+                        <span><a href=""><img src="{% static "img/facebook.png" %}" alt="facebook"></a>
+                        <a href=""><img src="{% static "img/twitter.png" %}" alt="twitter" class="contact-icons"></a></span>
+                    </h4>
+                </div>
+            </div>
+            <div class="contact-bottom"></div>
+        </div>
+    </section>
+
+
+    <div class="title bg-color-intro">
+       <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">"Smile, breathe and go slowly." -  Thích Nhất Hạnh</h1>
+       <div class="hr"></div>
+    </div>
+    <!-- /intro text -->
+
+
+    <!-- 3 images columns -->
+    <div class="padding-top">
+
+      <div class="container">
+
+        <div class="row padding-bottom">
+
+          <div class="col-md-12">
+            {% for sponsor in sponsors %}
+              <div class="col-md-4 col-sm-4">
+                <div class="media">
+                 <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
+                  <div class="media-body">
+                    <h2>{{ sponsor.name }}</h2>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+
+          </div>
+
+        </div><!-- /row -->
+      </div><!-- /container -->
+
+      </div><!-- /padding-top -->
+
+
+      <!-- Pricing section -->
+      <div class="title bg-color-pricing">
+        <h1 id="pricing">Pricing</h1>
+        <div class="hr"></div>
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+             <!-- Pricing tables -->
+             <div class="flat">
+                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                     <ul class="plan">
+                        <li class="plan-name">
+                        Landscape photography
+                        </li>
+                        <li class="plan-price">
+                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
+                        </li>
+                        <li>
+                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
+                        </li>
+                        <li>
+                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
+                        </li>
+                        <li>
+                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
+                        </li>
+                        <li class="plan-action">
+                        <a href="index.html" class="action-btn btn">order now</a>
+                        </li>
+                     </ul>
+                 </div>
+
+                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                     <ul class="plan featured">
+                        <li class="plan-name">
+                        Black &amp; white photography
+                        </li>
+                        <li class="plan-price">
+                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
+                        </li>
+                        <li>
+                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
+                        </li>
+                        <li>
+                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
+                        </li>
+                        <li>
+                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
+                        </li>
+                        <li class="plan-action">
+                        <a href="index.html" class="action-btn btn">order now</a>
+                        </li>
+                     </ul>
+                 </div>
+
+                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+                     <ul class="plan">
+                        <li class="plan-name">
+                        Wildlife photography
+                        </li>
+                        <li class="plan-price">
+                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
+                        </li>
+                        <li>
+                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
+                        </li>
+                        <li>
+                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
+                        </li>
+                        <li>
+                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
+                        </li>
+                        <li class="plan-action">
+                        <a href="index.html" class="action-btn btn">order now </a>
+                        </li>
+                     </ul>
+                 </div>
+
+             </div>
+             <!-- /pricing tables -->
+
+        </div><!-- /row -->
+
+     </div><!-- /container -->
+
+
+     <!-- Contact section -->
+     <div class="title bg-color-contact">
+        <h1 id="contact">Contact</h1>
+        <div class="hr"></div>
+      </div>
+
+     <div class="container">
+         <div class="row padding-bottom">
+             <div class="col-md-12 col-sm-12">
+               <img src="{% static "img/picture5.jpg" %}" alt="picture" class="top-contact">
+             </div>
+             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+               <h4><strong>Address</strong>
+               <span>The wisdom of life consists in the elimination of non-essentials.</span>
+               <span>111 Lynnhaven Road, Virginia Beach, VA 22233 </span>
+               </h4>
+             </div>
+             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+               <h4><strong>Tel / email</strong>
+               <span>The wisdom of life consists in the elimination of non-essentials.</span>
+               <span>tel: 757-111-1111</span>
+               <span>email: <a href="mailto:minimalist@yahoo.com">minimalist@yahoo.com</a></span>
+               </h4>
+             </div>
+             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
+               <h4><strong>Follow me</strong>
+               <span>The wisdom of life consists in the elimination of non-essentials.</span>
+               <span><a href=""><img src="{% static "img/facebook.png" %}" alt="facebook"></a>
+               <a href=""><img src="{% static "img/twitter.png" %}" alt="twitter" class="contact-icons"></a></span>
+               </h4>
+             </div>
+
+         </div><!-- /row -->
+         <div class="contact-bottom"></div>
+     </div><!-- /container -->
+{% endblock %}
+
+{% block js_bottom %}
+    <script src="{% static "js/particles.js" %}"></script>
+    <script>
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', '{% static "json/particles.json" %}', function() {
+          console.log('callback - particles.js config loaded');
+        });
+    </script>
+{% endblock %}

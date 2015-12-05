@@ -10,9 +10,9 @@ class TeamSignUp(CreateView):
     template_name = "index.html"
 
     def get_context_data(self, **kwargs):
-    	context = super(TeamSignUp, self).get_context_data(**kwargs)
+        context = super(TeamSignUp, self).get_context_data(**kwargs)
 
-    	context['sponsors'] = Sponsor.objects.all()
-    	context['judges'] = Judge.objects.all()
+        context['co_presentors'] = Sponsor.objects.all()
+        context['judges'] = Judge.objects.all()
 
-    	return context
+        return context

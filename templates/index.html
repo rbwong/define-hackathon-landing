@@ -4,359 +4,183 @@
 {% load staticfiles %}
 
 {% block body %}
-<!-- Intro text -->
-    <div class="title bg-color-intro">
-       <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">"Smile, breathe and go slowly." -  Thích Nhất Hạnh</h1>
-       <div class="hr"></div>
-    </div>
-    <!-- /intro text -->
-
-
-    <!-- 3 images columns -->
-    <div class="padding-top">
-
-      <div class="container">
-
-        <div class="row padding-bottom">
-
-          <div class="col-md-12">
-            {% for sponsor in sponsors %}
-              <div class="col-md-4 col-sm-4">
-                <div class="media">
-                 <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
-                  <div class="media-body">
-                    <h2>{{ sponsor.name }}</h2>
-                  </div>
+    <!-- HEADER -->
+    <div id="particles-js"></div>
+    <section id="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="{% static "img/logo.png" %}" alt="logo" class="logo-header">
                 </div>
-              </div> 
-            {% endfor %}
-
-          </div>
-
-        </div><!-- /row -->
-      </div><!-- /container -->
-
-      </div><!-- /padding-top -->
-
-
-      <!-- Biography section -->
-      <div class="container">
-
-          <div class="row">
-             <h2 id="biography">biography</h2>
-
-             <div class="col-md-8 col-xs-offset-2">
-             <p class="space"> Around us, life bursts with miracles--a glass of water, a ray of sunshine, a leaf, a caterpillar, a flower, laughter, raindrops. If you live in awareness, it is easy to see miracles everywhere. Each human being is a multiplicity of miracles.
-            Eyes that see thousands of colors, shapes, and forms; ears that hear a bee flying or a thunderclap; a brain that ponders a speck of dust as easily as the entire cosmos; a heart that beats in rhythm with the heartbeat of all beings.
-              </p>
-             <p class="space"> Breath is the bridge which connects life to consciousness, which unites your body to your thoughts. Whenever your mind becomes scattered, use your breath as the means to take hold of your mind again.
-             </p>
-
-             <div class="text-center">
-              <a href="mailto:minimalist@yahoo.com" class="orange-btn btn wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">get in touch</a>
-             </div>
-             </div>
-          </div>
-      </div>
-      <!-- /biography section -->
-
-
-      <!-- Services section -->
-      <div class="title bg-color-services">
-         <h1 id="services">Services</h1>
-         <div class="hr"></div>
-      </div>
-
-      <div class="container">
-         <div class="row padding-bottom">
-             <div class="col-md-12 col-sm-12">
-               <img src="{% static "img/picture4.jpg" %}" alt="picture1" class="top-services">
-             </div>
-
-             <!-- Services Panels -->
-             <div class="col-md-3 col-sm-6">
-                <div class="services1 services1-default text-center">
-                   <div class="services1-body">
-                     <h2 class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><strong>Landscape</strong> photography</h2>
-                       <p>The wisdom of life consists in the elimination of non-essentials.</p>
-                   </div>
+            </div> <br>
+            <div class="container">
+                <div class="col-sm-12">
+                    <p class="header-details">January 28-30, 2016 | University of the Philippines Diliman</p>
                 </div>
-              </div>
-              <!-- /services panel -->
-
-              <div class="col-md-3 col-sm-6">
-                 <div class="services1 services1-default text-center">
-                    <div class="services1-body">
-                       <h2 class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><strong>Wildlife</strong> photography</h2>
-                        <p>The wisdom of life consists in the elimination of non-essentials.</p>
+            </div> <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a href="#register" class="header-button orange-btn btn wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">Sign Up</a>
                     </div>
-                 </div>
-              </div>
-              <!-- /services panel -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-              <div class="col-md-3 col-sm-6">
-                 <div class="services1 services1-default text-center">
-                    <div class="services1-body">
-                        <h2 class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><strong>Black &amp; white</strong> photography</h2>
-                        <p>The wisdom of life consists in the elimination of non-essentials.</p>
+    <section id="challenge-section">
+        <div class="title bg-color-intro">
+            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">The Challenge</h1>
+            <div class="hr"></div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-center col-sm-10 offset-2">
+                    <p class="space"> There are many challenges in the world that put the good of humanity to the test. We encourage all ideas that could help to address these, both on a local and global scale. One example is the currently largest refugee crises since the Second World War. More then 4 million refugees have been forced to leave their home country Syria on a dangerous and long journey. Another example is the recent earthquakes that hit Nepal on the 5th of April, which left at least 2 million Nepalis homeless. Events like these are of course very challenging for the people involved. But we believe that Open Source and creative thinking can help in bringing useful solutions.
+                    </p>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors-section">
+        <div class="title bg-color-intro">
+            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Sponsors</h1>
+            <div class="hr"></div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <h2>Organizers</h2>
+                <div class="col-sm-12">
+                    <div class="row">
+                    {% for organizer in oganizers %}
+                      <div class="sponsor col-center col-lg-3 col-md-4 col-sm-6">
+                        <div class="media">
+                         <img src="{% get_media_prefix %}{{ organizer.picture }}" alt="picture">
+                          <div class="media-body">
+                            <h2>{{ organizer.name }}</h2>
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
                     </div>
-                 </div>
-               </div>
-               <!-- /services panel -->
-
-               <div class="col-md-3 col-sm-6">
-                  <div class="services1 services1-default text-center">
-                    <div class="services1-body">
-                        <h2 class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><strong>Organic Food</strong> photography</h2>
-                        <p>The wisdom of life consists in the elimination of non-essentials.</p>
+                </div>
+                <h2>Co-Presentors</h2>
+                <div class="col-sm-12">
+                    <div class="row">
+                    {% for sponsor in co_presentors %}
+                      <div class="sponsor col-center col-lg-3 col-md-4 col-sm-6">
+                        <div class="media">
+                         <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
+                          <div class="media-body">
+                            <h2>{{ sponsor.name }}</h2>
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
                     </div>
-                  </div>
-               </div>
-               <!-- /services panel -->
-
-
-         </div><!-- /row -->
-      </div><!-- /container -->
-
-
-      <!-- Gallery section -->
-      <div class="title bg-color-gallery">
-         <h1 id="gallery" class="wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">Gallery</h1>
-         <div class="hr"></div>
-      </div>
-
-      <div class="container">
-
-        <div class="row margin-top">
-            <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
-                <div class="gallery-page-wrap">
-                    <img src="{% static "img/gallery1.jpg" %}" alt="photo">
-                        <div class="overlay">
-                            <div class="gallery-page-inner">
-                                <h3><a href="index.html">Landscape</a> </h3>
-                                <a href="http://marijazaric.com/minimalist-theme/images/gallery1a.jpg" data-lightbox="image-1" data-title="Photo1"> View   <i class="fa fa-angle-double-right"></i>
-</a>
-                            </div>
-                        </div>
                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
-                <div class="gallery-page-wrap">
-                    <img src="{% static "img/gallery2.jpg" %}" alt="photo">
-                        <div class="overlay">
-                            <div class="gallery-page-inner">
-                                <h3><a href="index.html">Landscape</a> </h3>
-                                <a href="http://marijazaric.com/minimalist-theme/images/gallery2a.jpg" data-lightbox="image-1" data-title="Photo2">View <i class="fa fa-angle-double-right"></i>
-</a>
-                            </div>
+                <h2>Minor Sponsors</h2>
+                <div class="col-sm-12">
+                    <div class="row">
+                    {% for sponsor in minor_sponsors %}
+                      <div class="sponsor col-center col-lg-3 col-md-4 col-sm-6">
+                        <div class="media">
+                         <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
+                          <div class="media-body">
+                            <h2>{{ sponsor.name }}</h2>
+                          </div>
                         </div>
+                      </div>
+                    {% endfor %}
+                    </div>
                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
-                <div class="gallery-page-wrap">
-                    <img src="{% static "img/gallery3.jpg" %}" alt="photo">
-                        <div class="overlay">
-                            <div class="gallery-page-inner">
-                                <h3><a href="index.html">Wildlife</a> </h3>
-                                <a href="http://marijazaric.com/minimalist-theme/images/gallery3a.jpg" data-lightbox="image-1" data-title="Photo3">View <i class="fa fa-angle-double-right"></i>
-</a>
-                            </div>
+                <h2>Media Partners</h2>
+                <div class="col-sm-12">
+                    <div class="row">
+                    {% for partner in partners %}
+                      <div class="partner col-center col-lg-3 col-md-4 col-sm-6">
+                        <div class="media">
+                         <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
+                          <div class="media-body">
+                            <h2>{{ partner.name }}</h2>
+                          </div>
                         </div>
+                      </div>
+                    {% endfor %}
+                    </div>
                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
-                <div class="gallery-page-wrap">
-                    <img src="{% static "img/gallery4.jpg" %}" alt="photo">
-                        <div class="overlay">
-                            <div class="gallery-page-inner">
-                                <h3><a href="index.html">Wildlife</a> </h3>
-                                <a href="http://marijazaric.com/minimalist-theme/images/gallery4a.jpg" data-lightbox="image-1" data-title="Photo4">View <i class="fa fa-angle-double-right"></i>
-</a>
-                            </div>
+                <h2>Community Partners</h2>
+                <div class="col-sm-12">
+                    <div class="row">
+                    {% for partner in partners %}
+                      <div class="partner col-center col-lg-3 col-md-4 col-sm-6">
+                        <div class="media">
+                         <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
+                          <div class="media-body">
+                            <h2>{{ partner.name }}</h2>
+                          </div>
                         </div>
+                      </div>
+                    {% endfor %}
+                    </div>
                 </div>
-             </div>
-             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
-                <div class="gallery-page-wrap">
-                    <img src="{% static "img/gallery5.jpg" %}" alt="photo">
-                        <div class="overlay">
-                            <div class="gallery-page-inner">
-                                <h3><a href="index.html">Black and white</a> </h3>
-                                <a href="http://marijazaric.com/minimalist-theme/images/gallery5a.jpg" data-lightbox="image-1" data-title="Photo5">View <i class="fa fa-angle-double-right"></i>
-</a>
-                            </div>
-                        </div>
-                </div>
-             </div>
-             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
-                <div class="gallery-page-wrap">
-                    <img src="{% static "img/gallery6.jpg" %}" alt="photo">
-                        <div class="overlay">
-                            <div class="gallery-page-inner">
-                                <h3><a href="index.html">Black and white</a> </h3>
-                                <a href="http://marijazaric.com/minimalist-theme/images/gallery6a.jpg" data-lightbox="image-1" data-title="Photo6">View <i class="fa fa-angle-double-right"></i>
-</a>
-                            </div>
-                        </div>
-                </div>
-             </div>
-             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
-                <div class="gallery-page-wrap">
-                    <img src="{% static "img/gallery7.jpg" %}" alt="photo">
-                        <div class="overlay">
-                            <div class="gallery-page-inner">
-                                <h3><a href="index.html">Food</a> </h3>
-                                <a href="http://marijazaric.com/minimalist-theme/images/gallery7a.jpg" data-lightbox="image-1" data-title="Photo7">View <i class="fa fa-angle-double-right"></i>
-</a>
-                            </div>
-                        </div>
-                </div>
-             </div>
-             <div class="col-xs-12 col-sm-4 col-md-3 img-gallery">
-                <div class="gallery-page-wrap">
-                    <img src="{% static "img/gallery8.jpg" %}" alt="photo">
-                        <div class="overlay">
-                            <div class="gallery-page-inner">
-                                <h3><a href="index.html">Food</a> </h3>
-                                <a href="http://marijazaric.com/minimalist-theme/images/gallery8a.jpg" data-lightbox="image-1" data-title="Photo8">View <i class="fa fa-angle-double-right"></i>
-</a>
-                            </div>
-                        </div>
-                </div>
-             </div>
+            </div>
+        </div>
+    </section>
 
-        </div><!-- /row -->
+    <section id="faq-section">
+        <div class="title bg-color-intro">
+            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Frequently Asked Questions</h1>
+            <div class="hr"></div>
+        </div>
 
-      </div><!-- /container -->
+        <div class="container">
 
-
-      <!-- Pricing section -->
-      <div class="title bg-color-pricing">
-        <h1 id="pricing">Pricing</h1>
-        <div class="hr"></div>
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-
-             <!-- Pricing tables -->
-             <div class="flat">
-                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                     <ul class="plan">
-                        <li class="plan-name">
-                        Landscape photography
-                        </li>
-                        <li class="plan-price">
-                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
-                        </li>
-                        <li>
-                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
-                        </li>
-                        <li>
-                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
-                        </li>
-                        <li>
-                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
-                        </li>
-                        <li class="plan-action">
-                        <a href="index.html" class="action-btn btn">order now</a>
-                        </li>
-                     </ul>
+            <div class="row">
+                <div class="col-center col-sm-8 offset-4">
+                    <h2 class="faq-header">(1) I’m Not Sure If I’m Qualified Enough To Join The Hackathon…</h2>
+                    <p class="space"> Around us, life bursts with miracles--a glass of water, a ray of sunshine, a leaf, a caterpillar, a flower, laughter, raindrops. If you live in awareness, it is easy to see miracles everywhere. Each human being is a multiplicity of miracles.
+                    Eyes that see thousands of colors, shapes, and forms; ears that hear a bee flying or a thunderclap; a brain that ponders a speck of dust as easily as the entire cosmos; a heart that beats in rhythm with the heartbeat of all beings.
+                    </p>
+                    <p class="space"> Breath is the bridge which connects life to consciousness, which unites your body to your thoughts. Whenever your mind becomes scattered, use your breath as the means to take hold of your mind again.
+                    </p>
                  </div>
-
-                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                     <ul class="plan featured">
-                        <li class="plan-name">
-                        Black &amp; white photography
-                        </li>
-                        <li class="plan-price">
-                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
-                        </li>
-                        <li>
-                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
-                        </li>
-                        <li>
-                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
-                        </li>
-                        <li>
-                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
-                        </li>
-                        <li class="plan-action">
-                        <a href="index.html" class="action-btn btn">order now</a>
-                        </li>
-                     </ul>
+                 <div class="col-center col-sm-8 offset-4">
+                    <h2 class="faq-header">(2) When Does The Hackathon Start?</h2>
+                    <p class="space"> Registration will open at 16:00 on Friday but there’s no hard deadline before you have to arrive. Opening ceremony, with speeches from two Aid organizations, will start at 17:30.
+                    </p>
+                    </p>
                  </div>
-
-                 <div class="col-md-4 col-sm-6 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-                     <ul class="plan">
-                        <li class="plan-name">
-                        Wildlife photography
-                        </li>
-                        <li class="plan-price">
-                           <strong>8" x 12"</strong> / 20cm x 31cm / $20
-                        </li>
-                        <li>
-                          <strong>10" x 15"</strong> / 25cm x 38cm / $25
-                        </li>
-                        <li>
-                          <strong>16" x 24"</strong> /  41cm x 61cm / $55
-                        </li>
-                        <li>
-                          <strong>20" x 30"</strong> / 51cm x 76cm   / $65
-                        </li>
-                        <li class="plan-action">
-                        <a href="index.html" class="action-btn btn">order now </a>
-                        </li>
-                     </ul>
+                 <div class="col-center col-sm-8 offset-4">
+                    <h2 class="faq-header">(1) I’m Not Sure If I’m Qualified Enough To Join The Hackathon…</h2>
+                    <p class="space"> Around us, life bursts with miracles--a glass of water, a ray of sunshine, a leaf, a caterpillar, a flower, laughter, raindrops. If you live in awareness, it is easy to see miracles everywhere. Each human being is a multiplicity of miracles.
+                    Eyes that see thousands of colors, shapes, and forms; ears that hear a bee flying or a thunderclap; a brain that ponders a speck of dust as easily as the entire cosmos; a heart that beats in rhythm with the heartbeat of all beings.
+                    </p>
+                    <p class="space"> Breath is the bridge which connects life to consciousness, which unites your body to your thoughts. Whenever your mind becomes scattered, use your breath as the means to take hold of your mind again.
+                    </p>
                  </div>
-
-             </div>
-             <!-- /pricing tables -->
-
-        </div><!-- /row -->
-
-     </div><!-- /container -->
-
-
-     <!-- Contact section -->
-     <div class="title bg-color-contact">
-        <h1 id="contact">Contact</h1>
-        <div class="hr"></div>
-      </div>
-
-     <div class="container">
-         <div class="row padding-bottom">
-             <div class="col-md-12 col-sm-12">
-               <img src="{% static "img/picture5.jpg" %}" alt="picture" class="top-contact">
-             </div>
-             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-               <h4><strong>Address</strong>
-               <span>The wisdom of life consists in the elimination of non-essentials.</span>
-               <span>111 Lynnhaven Road, Virginia Beach, VA 22233 </span>
-               </h4>
-             </div>
-             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-               <h4><strong>Tel / email</strong>
-               <span>The wisdom of life consists in the elimination of non-essentials.</span>
-               <span>tel: 757-111-1111</span>
-               <span>email: <a href="mailto:minimalist@yahoo.com">minimalist@yahoo.com</a></span>
-               </h4>
-             </div>
-             <div class="col-md-4 col-sm-4 wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">
-               <h4><strong>Follow me</strong>
-               <span>The wisdom of life consists in the elimination of non-essentials.</span>
-               <span><a href=""><img src="{% static "img/facebook.png" %}" alt="facebook"></a>
-               <a href=""><img src="{% static "img/twitter.png" %}" alt="twitter" class="contact-icons"></a></span>
-               </h4>
-             </div>
-
-         </div><!-- /row -->
-         <div class="contact-bottom"></div>
-     </div><!-- /container -->
+                 <div class="col-center col-sm-8 offset-4">
+                    <h2 class="faq-header">(2) When Does The Hackathon Start?</h2>
+                    <p class="space"> Registration will open at 16:00 on Friday but there’s no hard deadline before you have to arrive. Opening ceremony, with speeches from two Aid organizations, will start at 17:30.
+                    </p>
+                    </p>
+                 </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
 
-<form method = "POST" > {% csrf_token %}
-  {{ form.as_p }}
-  <button class = "" type = "submit">Book Now </button>
-</form>
+{% block js_bottom %}
+    <script src="{% static "js/particles.js" %}"></script>
+    <script>
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', '{% static "json/particles.json" %}', function() {
+          console.log('callback - particles.js config loaded');
+        });
+    </script>
+{% endblock %}

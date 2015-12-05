@@ -1,134 +1,133 @@
 
 
 /* ----------------------------------------------------
-	 GENERAL STYLES
+     GENERAL STYLES
 ------------------------------------------------------- */
 
 
 html {
-	border: 20px solid #eceeef;
 }
 
 body {
-	background-color: #fff;
+    background-color: #fff;
 }
 
 p {
-	font-size: 1.1em;
-    font-family: 'Oxygen', sans-serif;	
-	color: #333;
-	line-height: 1.7em;		
+    font-size: 1.1em;
+    font-family: 'Oxygen', sans-serif;
+    color: #333;
+    line-height: 1.7em;
 }
 
-a { 
+a {
     color: #f64747;
-	text-decoration: none; 
-	-webkit-transition: background-color .2s linear, color .2s linear;
-	-moz-transition: background-color .2s linear, color .2s linear;
-	-o-transition: background-color .2s linear, color .2s linear;
-	-ms-transition: background-color .2s linear, color .2s linear;
-	transition: background-color .2s linear, color .2s linear;
+    text-decoration: none;
+    -webkit-transition: background-color .2s linear, color .2s linear;
+    -moz-transition: background-color .2s linear, color .2s linear;
+    -o-transition: background-color .2s linear, color .2s linear;
+    -ms-transition: background-color .2s linear, color .2s linear;
+    transition: background-color .2s linear, color .2s linear;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #f75f5f;
+    text-decoration: none;
+    color: #f75f5f;
 }
 
 .title h1 {
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
-	font-size: 1.7em;
-	text-align: center;
-	letter-spacing: 0.2em;
-	color: #2A2A2A;
-	line-height: 1.5em;
-	margin-top: 27px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 1.7em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #fff;
+    line-height: 1.5em;
+    margin-top: 27px;
 }
 
 .hr {
-	border-bottom: 2px solid #f64747;
-	display: block;
-	width: 30px;
-	margin: auto;
-	margin-bottom: 40px;
+    border-bottom: 2px solid #f64747;
+    display: block;
+    width: 30px;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
 .padding-top {
-	padding-top: 60px;
+    padding-top: 60px;
 }
 
 .padding-bottom {
-	padding-bottom: 17px;
+    padding-bottom: 17px;
 }
 
 .btn {
-	border-radius: 0px;
-	text-decoration: none;
-	padding: 12px 15px;
-	font-size: 1em;
-	line-height: 1.5em;
-	text-transform: capitalize;
-	font-family: 'Ubuntu', sans-serif;       
-	font-weight: 400;
-	letter-spacing: 0.2em;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-	margin-bottom:10px;
-	margin-top:10px;
+    border-radius: 0px;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-bottom:10px;
+    margin-top:10px;
 }
 
 .orange-btn {
-	color: black;
-	background-color: transparent;
+    color: black;
+    background-color: transparent;
     border: 2px solid #f64747;
 }
 
 .orange-btn:hover {
-	color: #333;
-	background-color: transparent;
-	border-color: black;	
+    color: #333;
+    background-color: transparent;
+    border-color: black;
 }
 
 .action-btn {
-	color: black;
-	background-color: transparent;
+    color: black;
+    background-color: transparent;
     border: 2px solid black;
 }
 
 .action-btn:hover {
-	color: #333;
-	background-color: transparent;
-	border-color: #404040;	
+    color: #333;
+    background-color: transparent;
+    border-color: #404040;
 }
 
 img {
-	max-width: 100%;	
-	height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .brand {
-	display: none;
+    display: none;
 }
 
 .navbar-default .navbar-brand {
         margin: 0;
         padding: 10px 12px 14px;
         text-align: center;
-		font-family: 'Ubuntu', sans-serif;       
-		font-size: 1.7em;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.7em;
         font-weight: 400;
         line-height: normal;
         color: #889a9b;
-		text-transform: lowercase;
-		margin-top: 38px;
+        text-transform: lowercase;
+        margin-top: 38px;
 }
 
 /* ----------------------------------------------------
-	 Navigation
+     Navigation
 ------------------------------------------------------- */
 
 
@@ -139,8 +138,8 @@ img {
 }
 
 .navbar-default {
-	background-color: transparent;
-	border-color: transparent;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .navbar-toggle {
@@ -158,17 +157,17 @@ img {
         margin: 0;
         padding: 30px 0 14px;
         text-align: center;
-		font-family: 'Ubuntu', sans-serif;       
-		font-size: 1.8em;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.8em;
         font-weight: 400;
         line-height: normal;
         color: #889a9b;
-		text-transform: lowercase;
+        text-transform: lowercase;
 }
 
 .navbar {
-        border-radius: 0; 
-		min-height: 0;
+        border-radius: 0;
+        min-height: 0;
 }
 
 .navbar-header {
@@ -178,18 +177,18 @@ img {
 .navbar-default {
         border: none;
         background: #fff;
-		margin-top: 16px;
+        margin-top: 16px;
 }
-	
+
 .navbar-default .navbar-nav>li>a {
-	    color: #2A2A2A;
-	    font-family: 'Oxygen', sans-serif;
-	    font-size: 1em;
-	  	letter-spacing: 0.2em;
+        color: #2A2A2A;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1em;
+        letter-spacing: 0.2em;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-	   color: gray;
+       color: gray;
 }
 
 .nav>li>a {
@@ -209,37 +208,52 @@ img {
 
 }
 
-
 /* ----------------------------------------------------
-	INTRO WITH 3 IMAGES AND BIOGRAPHY
+    PARTICLE JS
 ------------------------------------------------------- */
 
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+#particles-js{
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    z-index: 1 !important;
+}
+
+/* ----------------------------------------------------
+    SECTIONS
+------------------------------------------------------- */
 .bg-color-intro {
-	background-color: #e3edee;
-	padding: 25px 0px 10px 0px;
-	margin-top: 36px;
-	margin-bottom: 20px;
+    color: #fff;
+    background-color: #7d0c07;
+    padding: 25px 0px 10px 0px;
 }
 
 
 .space {
-	margin-top: 25px;
-	margin-bottom: 25px;
-	text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: left;
 }
 
 
 h2 {
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
-	font-size: 1.1em;
-	text-align: center;
-	letter-spacing: 0.2em;
-	color: #2A2A2A;
-	line-height: 1.5em;
-	margin-top: 42px;
-	margin-bottom: 4px;
-	text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #2A2A2A;
+    line-height: 1.5em;
+    margin-top: 42px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
 }
 
 .media {
@@ -293,77 +307,153 @@ h2 {
 }
 
 
-.media-body h2 {  
-  color: white; 
+.media-body h2 {
+  color: white;
   font-family: 'Ubuntu', sans-serif;
   margin-top: 90px;
 }
 
+/* -------HEADER------- */
+#header-section {
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    padding-top: 10%;
+    padding-bottom: 8%;
+}
+
+.logo-header {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.header-details {
+    color: #720e03;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-button {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* -------CHALLENGE------- */
+#challenge-section {
+    background-color: #fff;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2 !important;
+    padding-bottom: 4%;
+}
+
+.challenge-header {
+    text-align: left;
+    font-weight: 800;
+}
+
+/* -------SPONSORS------- */
+#sponsors-section {
+    background-color: #fff;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2 !important;
+}
+
+.col-center {
+   float: none;
+   margin-right: auto;
+   margin-left: auto;
+ }
+
+ .sponsor {
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+
+/* -------FAQ------- */
+#faq-section {
+    background-color: #fff;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2 !important;
+    padding-top: 10%;
+    padding-bottom: 8%;
+}
+
+.faq-header {
+    text-align: left;
+    font-weight: 800;
+}
 
 
 /* ----------------------------------------------------
-	 SERVICES STYLES
+     SERVICES STYLES
 ------------------------------------------------------- */
 
 .bg-color-services {
-	background-color: #e3edee;
-	padding: 25px 0px 10px 0px;
-	margin-top: 70px;
-	margin-bottom: 20px;
+    background-color: #7d0c07;
+    padding: 25px 0px 10px 0px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .top-services{
-	margin-top: 60px;
-	margin-bottom: 80px;
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 .services1 {
-	margin-bottom: 32px;
-	background-color: white;
-    background-image:url(../images/pattern1.png);
-	background-position: left top;
-	background-repeat: repeat;
+    margin-bottom: 32px;
+    background-color: white;
+    background-image:url(../img/resources/pattern1.png);
+    background-position: left top;
+    background-repeat: repeat;
 }
 
 .services1-default {
-	padding: 15px 15px;
-	border: 2px solid #E9E9E9;
-	border-radius: 0;
+    padding: 15px 15px;
+    border: 2px solid #E9E9E9;
+    border-radius: 0;
 }
 
 .services1-body h2 {
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
-	font-size: 1.1em;
-	text-align: center;
-	letter-spacing: 0.2em;
-	color: #2A2A2A;
-	line-height: 1.6em;
-	margin-top: 25px;
-	text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #2A2A2A;
+    line-height: 1.6em;
+    margin-top: 25px;
+    text-transform: uppercase;
 }
 
 .services1-body p {
-	font-size: 1em;
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
-	color: #333;
-	margin-top: 8px;
-	margin-bottom: 23px;
-	text-align: center;
-	line-height: 1.6em;
+    font-size: 1em;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin-top: 8px;
+    margin-bottom: 23px;
+    text-align: center;
+    line-height: 1.6em;
 }
 
 
 /* ----------------------------------------------------
-	 GALLERY STYLES
+     GALLERY STYLES
 ------------------------------------------------------- */
 
 .bg-color-gallery {
-	background-color: #e3edee;
-	padding: 25px 0px 10px 0px;
-	margin-top: 31px;
-	margin-bottom: 80px;
+    background-color: #7d0c07;
+    padding: 25px 0px 10px 0px;
+    margin-top: 31px;
+    margin-bottom: 80px;
 }
 
 .gallery-page-wrap {
@@ -396,7 +486,7 @@ h2 {
 }
 
 .gallery-page-wrap .gallery-page-inner a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .gallery-page-wrap .gallery-page-inner p {
@@ -417,7 +507,7 @@ h2 {
    -webkit-transition: opacity 500ms;
    -moz-transition: opacity 500ms;
    -o-transition: opacity 500ms;
-   transition: opacity 500ms;  
+   transition: opacity 500ms;
    padding: 30px;
 }
 
@@ -442,14 +532,14 @@ h2 {
 
 
 /* ----------------------------------------------------
-	 PRICING TABLES STYLES
+     PRICING TABLES STYLES
 ------------------------------------------------------- */
 
 .bg-color-pricing {
-	background-color: #e3edee;
-	padding: 25px 0px 10px 0px;
-	margin-top: 48px;
-	margin-bottom: 80px;
+    background-color: #7d0c07;
+    padding: 25px 0px 10px 0px;
+    margin-top: 48px;
+    margin-bottom: 80px;
 }
 
 .flat .plan {
@@ -464,7 +554,7 @@ h2 {
 
 .flat .plan li {
     padding: 10px 15px;
-	color: #333;
+    color: #333;
     border-top: 1px solid #f5f5f5;
 }
 
@@ -479,19 +569,19 @@ h2 {
     background: transparent;
     margin-bottom: 30px;
     border-bottom: 2px solid #E9E9E9;
-	font-family: 'Oxygen', sans-serif;
-	text-transform: uppercase;
-	background-image:url(../images/pattern1.png);
-	background-position: left top;
-	background-repeat: repeat-x;
-	font-weight: 400;
-	text-align: center;
-	letter-spacing: 0.2em;
-	color: #2A2A2A;
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    background-image:url(../img/resources/pattern1.png);
+    background-position: left top;
+    background-repeat: repeat-x;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #2A2A2A;
 }
 
 .flat .plan li > strong {
-	color: #2A2A2A;
+    color: #2A2A2A;
 }
 
 .flat .plan li.plan-action {
@@ -501,87 +591,87 @@ h2 {
 
 .flat .plan.featured li.plan-name {
     background: #f64747;
-	color: white;
-	background-image:url(../images/pattern1.png);
-	background-position: center top;
-	background-repeat: repeat;
+    color: white;
+    background-image:url(../img/resources/pattern1.png);
+    background-position: center top;
+    background-repeat: repeat;
 }
-	
+
 .action-btn {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 
 /* ----------------------------------------------------
-	CONTACT STYLES
+    CONTACT STYLES
 ------------------------------------------------------- */
 
 .bg-color-contact {
-	background-color: #e3edee;
-	padding: 25px 0px 10px 0px;
-	margin-top: 80px;
-	margin-bottom: 20px;
+    background-color: #7d0c07;
+    padding: 25px 0px 10px 0px;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 .top-contact {
-	margin-top: 60px;
-	margin-bottom: 33px;
+    margin-top: 60px;
+    margin-bottom: 33px;
 }
 
 h4 {
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
-	font-size: 1.1em;
-	text-align: left;
-	letter-spacing: 0.2em;
-	color: #2A2A2A;
-	line-height: 1.5em;
-	margin-top: 42px;
-	margin-bottom: 12px;
-	text-transform: uppercase;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    text-align: left;
+    letter-spacing: 0.2em;
+    color: #2A2A2A;
+    line-height: 1.5em;
+    margin-top: 42px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
 h4 span {
-	font-family: 'Oxygen', sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-	text-align: left;
-	letter-spacing: 0;
-	color: #2A2A2A;
-	line-height: 1.5em;
-	display: block;
-	margin-top: 9px;
-	text-transform: none;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: left;
+    letter-spacing: 0;
+    color: #2A2A2A;
+    line-height: 1.5em;
+    display: block;
+    margin-top: 9px;
+    text-transform: none;
 }
 
 .contact-bottom {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .contact-icons {
-	margin-left: 6px;
+    margin-left: 6px;
 }
 
 /* ----------------------------------------------------
-	FOOTER STYLES
+    FOOTER STYLES
 ------------------------------------------------------- */
 
 #footer {
-	position:relative;
-	width: 100%;
-	background: transparent;
-	color: #b6b6b6;
-	background-image:url(../images/footer.jpg);
-	background-position: left top;
-	background-repeat: no-repeat;
-	padding-bottom: 180px;
+    position:relative;
+    width: 100%;
+    background: transparent;
+    color: #b6b6b6;
+    background-image:url(../img/resources/footer.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    z-index: 2;
 }
 
 #footer h1 {
     margin-top: 150px;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;       
-	font-size: 1.3em;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
     font-weight: 400;
     line-height: normal;
     color: #889a9b;
@@ -590,51 +680,51 @@ h4 span {
 
 
 /* ----------------------------------------------------
-	 RESPONSIVE STYLES
+     RESPONSIVE STYLES
 ------------------------------------------------------- */
 
 
 @media(max-width:1024px) {
 
-.media-body h2 {  
-  margin-top: 50px;      
+.media-body h2 {
+  margin-top: 50px;
 }
 
 }
 
 
 @media(max-width:800px) {
-	
+
 html {
-	position: relative;
-	border: 5px solid #e4e7e9;
+    position: relative;
+    border: 5px solid #e4e7e9;
 }
 
 
 .col-xs-offset-2 {
-	margin-left: 0;
-	width: 99%;
+    margin-left: 0;
+    width: 99%;
 }
 
-.media-body h2 {  
-  margin-top: 30px;      
+.media-body h2 {
+  margin-top: 30px;
 }
 
 }
 
 @media(max-width:600px) {
-	
-.media-body h2 {  
-  margin-top: 110px;      
+
+.media-body h2 {
+  margin-top: 110px;
 }
 
 }
 
 
 @media(max-width:400px) {
-	
-.media-body h2 {  
-  margin-top: 40px;      
+
+.media-body h2 {
+  margin-top: 40px;
 }
 
 }
