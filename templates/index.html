@@ -20,30 +20,17 @@
         <div class="row padding-bottom">
 
           <div class="col-md-12">
-             <div class="col-md-4 col-sm-4">
-               <div class="media">
-               <img src="{% static "img/picture1.jpg" %}" alt="picture">
-               <div class="media-body">
-                <h2>SMILE</h2>
-               </div>
-               </div>
-             </div>
-             <div class="col-md-4 col-sm-4">
-               <div class="media">
-               <img src="{% static "img/picture2.jpg" %}" alt="picture">
-               <div class="media-body">
-                <h2>BREATHE</h2>
-               </div>
-               </div>
-             </div>
-             <div class="col-md-4 col-sm-4">
-               <div class="media">
-               <img src="{% static "img/picture3.jpg" %}" alt="picture">
-               <div class="media-body">
-                <h2>GO SLOWLY</h2>
-               </div>
-               </div>
-             </div>
+            {% for sponsor in sponsors %}
+              <div class="col-md-4 col-sm-4">
+                <div class="media">
+                 <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
+                  <div class="media-body">
+                    <h2>{{ sponsor.name }}</h2>
+                  </div>
+                </div>
+              </div> 
+            {% endfor %}
+
           </div>
 
         </div><!-- /row -->

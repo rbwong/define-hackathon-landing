@@ -49,7 +49,7 @@ class Team(models.Model):
 class Judge(models.Model):
     full_name = models.CharField(max_length=50, blank=False)
     organization = models.CharField(max_length=50, blank=False)
-    picture = models.ImageField(height_field=200, width_field=200)
+    picture = models.ImageField()
     description = models.TextField()
 
     def __unicode__(self):
@@ -59,7 +59,7 @@ class Judge(models.Model):
 class Sponsor(models.Model):
     name = models.CharField(max_length=50, blank=False)
     link = models.URLField()
-    picture = models.ImageField(height_field=200, width_field=200)
+    picture = models.ImageField()
 
     def __unicode__(self):
         return self.name
