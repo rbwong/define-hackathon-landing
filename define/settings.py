@@ -55,7 +55,7 @@ ROOT_URLCONF = 'define.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR + "/templates", ],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -76,12 +76,8 @@ WSGI_APPLICATION = 'define.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'definedb',
-                'USER': 'epchi',
-                'PASSWORD': 'foriamaradian',
-                'HOST': 'localhost',
-                'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -120,11 +116,6 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.8/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, "..", "www", "static")
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-# MEDIA FILE (user uploaded files)
-MEDIA_ROOT = os.path.join(BASE_DIR, "..", "www", "media")
-MEDIA_URL = '/media/'
+STATIC_URL = '/static/'
