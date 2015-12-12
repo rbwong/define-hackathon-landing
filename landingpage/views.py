@@ -12,7 +12,13 @@ class TeamSignUp(CreateView):
     def get_context_data(self, **kwargs):
         context = super(TeamSignUp, self).get_context_data(**kwargs)
 
-        context['co_presentors'] = Sponsor.objects.all()
+        context['organizers'] = Sponsor.objects.filter(category='Organizer')
+        context['platinum_sponsors'] = Sponsor.objects.filter(category='Platinum')
+        context['gold_sponsors'] = Sponsor.objects.filter(category='Gold')
+        context['silver_sponsors'] = Sponsor.objects.filter(category='Silver')
+        context['bronze_sponsors'] = Sponsor.objects.filter(category='Bronze')
+        context['media_partners'] = Sponsor.objects.filter(category='Media')
+        context['community_partners'] = Sponsor.objects.filter(category='Community')
         context['judges'] = Judge.objects.all()
 
         return context

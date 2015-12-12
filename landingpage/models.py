@@ -57,7 +57,17 @@ class Judge(models.Model):
 
 
 class Sponsor(models.Model):
+    CATEGORY_CHOICES = (
+        ('Organizer', 'Organized by'),
+        ('Platinum', 'Co-presented to by'),
+        ('Gold', 'In Cooperation with'),
+        ('Silver', 'Also brought to you by'),
+        ('Bronze', 'Special thanks to'),
+        ('Media', 'Media Sponsors'),
+        ('Community', 'Community Partners'),
+    )
     name = models.CharField(max_length=50, blank=False)
+    category = models.CharField(max_length=10, choices=CATEGORY_CHOICES)
     link = models.URLField()
     picture = models.ImageField()
 

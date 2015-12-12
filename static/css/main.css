@@ -40,7 +40,6 @@ a:hover {
     font-size: 1.7em;
     text-align: center;
     letter-spacing: 0.2em;
-    color: #fff;
     line-height: 1.5em;
     margin-top: 27px;
 }
@@ -226,12 +225,27 @@ canvas{
     z-index: 1 !important;
 }
 
+#accent-1 {
+    width: 20%;
+    position: fixed !important;
+    top: 5% !important;
+    right: 6% !important;
+    z-index: 2 !important;
+}
+
+#accent-2 {
+    width: 20%;
+    position: fixed !important;
+    top: 35% !important;
+    left: 4% !important;
+    z-index: 2 !important;
+}
+
 /* ----------------------------------------------------
     SECTIONS
 ------------------------------------------------------- */
 .bg-color-intro {
     color: #fff;
-    background-color: #7d0c07;
     padding: 25px 0px 10px 0px;
 }
 
@@ -265,11 +279,11 @@ h2 {
   background: rgba(0, 0, 0, 0.4);
   bottom: 0;
   color: white;
-  font-size: 1.3em;
+  font-size: 1em;
   left: 0;
   opacity: 0;
   overflow: hidden;
-  padding: 3.45em 3em;
+  padding: 10px;
   position: absolute;
   text-align: center;
   top: 0;
@@ -344,11 +358,17 @@ h2 {
 
 /* -------CHALLENGE------- */
 #challenge-section {
-    background-color: #fff;
+    opacity: 0.9;
+    background-color: #7d0c07;
     vertical-align: middle;
     position: relative;
     z-index: 2 !important;
     padding-bottom: 4%;
+}
+
+#challenge-section .title {
+    color: #fff;
+    padding: 25px 0px 10px 0px;
 }
 
 .challenge-header {
@@ -356,24 +376,46 @@ h2 {
     font-weight: 800;
 }
 
+#challenge-section p {
+    color: #fff;
+}
+
 /* -------SPONSORS------- */
 #sponsors-section {
-    background-color: #fff;
+    background-color: #efefef;
     vertical-align: middle;
     position: relative;
     z-index: 2 !important;
+    padding-bottom: 2%;
 }
 
-.col-center {
-   float: none;
-   margin-right: auto;
-   margin-left: auto;
- }
+#sponsors-section .title {
+    color: #000;
+    padding: 25px 0px 10px 0px;
+}
+
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
 
  .sponsor {
     margin-top: 30px;
     margin-bottom: 30px;
  }
+
+#sponsors-section p {
+    color: #fff;
+}
+
 
 /* -------FAQ------- */
 #faq-section {
@@ -381,8 +423,8 @@ h2 {
     vertical-align: middle;
     position: relative;
     z-index: 2 !important;
-    padding-top: 10%;
-    padding-bottom: 8%;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
 
 .faq-header {
@@ -622,7 +664,7 @@ h4 {
     font-family: 'Oxygen', sans-serif;
     font-weight: 400;
     font-size: 1.1em;
-    text-align: left;
+    text-align: center;
     letter-spacing: 0.2em;
     color: #2A2A2A;
     line-height: 1.5em;
@@ -635,7 +677,7 @@ h4 span {
     font-family: 'Oxygen', sans-serif;
     font-weight: 400;
     font-size: 1em;
-    text-align: left;
+    text-align: center;
     letter-spacing: 0;
     color: #2A2A2A;
     line-height: 1.5em;
@@ -661,7 +703,7 @@ h4 span {
     width: 100%;
     background: transparent;
     color: #b6b6b6;
-    background-image:url(../img/resources/footer.jpg);
+    background-image:url(../img/resources/footer.png);
     background-position: left top;
     background-repeat: no-repeat;
     z-index: 2;
