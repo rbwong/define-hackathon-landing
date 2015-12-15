@@ -828,7 +828,7 @@ h2.pageTitle {
 .mainHeader {
 	padding: 34px 0;
 	/*background: url("../img/color29.jpg") no-repeat scroll center center / cover #00467f;*/
-	background: url("../img/color29.jpg") no-repeat fixed center center; 
+	background: url("../img/color29.jpg") no-repeat fixed center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -863,7 +863,7 @@ h2.pageTitle {
 	margin: 0 0 40px;
 	font-weight: 300;
 }
-.mainHeader .btnGroup .btn {	
+.mainHeader .btnGroup .btn {
 	border-radius: 3px;
 	box-shadow: none;
 	color: #ffffff;
@@ -1096,7 +1096,7 @@ h2.pageTitle {
 #resetPage {
 	text-align:center;
 }
-#resetPage h1 {	
+#resetPage h1 {
 	border-bottom: 1px solid #D5D5D5;
 	margin: 10px 0 30px;
 	padding-bottom: 15px;
@@ -1157,7 +1157,7 @@ h2.pageTitle {
 	MY ACCOUNT
 *********************************************************/
 
-#myAccount h1 {	
+#myAccount h1 {
 	border-bottom: 1px solid #D5D5D5;
 	margin: 10px 0 30px;
 	padding-bottom: 15px;
@@ -1200,7 +1200,7 @@ h2.pageTitle {
 	EDIT PROFILE
 *********************************************************/
 
-#editProfile h1 {	
+#editProfile h1 {
 	border-bottom: 1px solid #D5D5D5;
 	margin: 10px 0 30px;
 	padding-bottom: 15px;
@@ -1248,7 +1248,7 @@ span.profile .btn:hover {
 	EDIT PROFILE PICS
 *********************************************************/
 
-#editPics h1 {	
+#editPics h1 {
 	border-bottom: 1px solid #D5D5D5;
 	margin: 10px 0 30px;
 	padding-bottom: 15px;
@@ -1343,7 +1343,7 @@ span.profile .btn:hover {
 	DOWNLOADS
 *********************************************************/
 
-#downloads h1 {	
+#downloads h1 {
 	border-bottom: 1px solid #D5D5D5;
 	margin: 10px 0 30px;
 	padding-bottom: 15px;
@@ -1366,7 +1366,7 @@ span.profile .btn:hover {
 	PAYMENT HISTORY
 *********************************************************/
 
-#payHistory h1 {	
+#payHistory h1 {
 	border-bottom: 1px solid #D5D5D5;
 	margin: 10px 0 30px;
 	padding-bottom: 15px;
@@ -1467,7 +1467,7 @@ span.profile .btn:hover {
 #userProfile .portfolio .item {
 	float: left;
 }
-#userProfile .portfolio .item:nth-child(2n) {  
+#userProfile .portfolio .item:nth-child(2n) {
 	margin-right: 20px;
 }
 #userProfile .portfolio .item .imgWrap {
@@ -1579,7 +1579,7 @@ span.profile .btn:hover {
 	padding: 93px 239px;
 	font-size: 100px;
 	color: #ccc;
-	
+
 }
 #uploadTheme .previewImage img {
     width: 100%;
@@ -1613,7 +1613,7 @@ span.profile .btn:hover {
 }
 #uploadTheme .progressbox {
 	border: 1px solid #CAF2FF;
-	padding: 1px; 
+	padding: 1px;
 	position:relative;
 	width:400px;
 	border-radius: 3px;
@@ -1641,7 +1641,7 @@ span.profile .btn:hover {
 	padding: 8px 10px;
 }
 #uploadTheme .zip_alert span {
-	
+
 }
 /*********************************************************
 	EDIT THEME
@@ -1688,7 +1688,7 @@ span.profile .btn:hover {
 	padding: 93px 239px;
 	font-size: 100px;
 	color: #ccc;
-	
+
 }
 #editTheme .previewImage img {
     width: 100%;
@@ -1927,7 +1927,7 @@ span.profile .btn:hover {
 	max-width: 640px;
 }
 #singleTheme .logAlert {
-	
+
 }
 #singleTheme .purchase {
 	background: #F5F5F5;
@@ -1959,7 +1959,7 @@ span.profile .btn:hover {
 	margin: 0 0 4px;
 }
 #singleTheme .purchase .desc a {
-	
+
 }
 #singleTheme .purchase .buyNow {
 	font-size: 24px;
@@ -2492,7 +2492,7 @@ span.profile .btn:hover {
 	font-size: 40px;
 	font-weight: 300;
 	margin: 0 0 30px;
-}	
+}
 #sell2 .cta .option {
 	margin: 0 15px;
 }
@@ -2604,4 +2604,17 @@ footer .subFooter ul > li {
 }
 footer .subFooter ul > li a {
 	margin-left: 15px;
+}
+
+.form-control, {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    font-size: 14px;
 }

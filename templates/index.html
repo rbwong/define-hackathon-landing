@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load bootstrap3 %}
 
 {% load static %}
 {% load staticfiles %}
@@ -22,7 +23,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <a href="#register" class="header-button orange-btn btn wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;">Sign Up</a>
+                        <button type ="button" class="header-button orange-btn btn wow fadeIn animated animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;" data-toggle = "modal" data-target = "#teamsignupmodal" id = "signup_button">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -220,6 +221,49 @@
     </section>
 {% endblock %}
 
+{% block form %}
+    <form method = "POST" action = "" id = "teamsignup_form"> {% csrf_token %}
+
+      <form>
+      <h4 class="text-left">Team details</h4>
+      {% bootstrap_field form.team_name %}
+      <h4 class="text-left">Member 1</h4>
+      {% bootstrap_field form.m1_full_name %}
+      {% bootstrap_field form.m1_school %}
+      {% bootstrap_field form.m1_course %}
+      {% bootstrap_field form.m1_contact_num %}
+      {% bootstrap_field form.m1_email %}
+      <h4 class="text-left">Member 2</h4>
+      {% bootstrap_field form.m2_full_name %}
+      {% bootstrap_field form.m2_school %}
+      {% bootstrap_field form.m2_course %}
+      {% bootstrap_field form.m2_contact_num %}
+      {% bootstrap_field form.m2_email %}
+      <h4 class="text-left">Member 3</h4>
+      {% bootstrap_field form.m3_full_name %}
+      {% bootstrap_field form.m3_school %}
+      {% bootstrap_field form.m3_course %}
+      {% bootstrap_field form.m3_contact_num %}
+      {% bootstrap_field form.m3_email %}
+      <h4 class="text-left">Member 4</h4>
+      {% bootstrap_field form.m4_full_name %}
+      {% bootstrap_field form.m4_school %}
+      {% bootstrap_field form.m4_course %}
+      {% bootstrap_field form.m4_contact_num %}
+      {% bootstrap_field form.m4_email %}
+      <h4 class="text-left">Member 5</h4>
+      {% bootstrap_field form.m5_full_name %}
+      {% bootstrap_field form.m5_school %}
+      {% bootstrap_field form.m5_course %}
+      {% bootstrap_field form.m5_contact_num %}
+      {% bootstrap_field form.m5_email %}
+      {% buttons %}
+      <button class = "btn btn-default btn-block" id = "submit_button" type = "submit"> Submit </button>
+      {% endbuttons %}
+    </form>
+
+{% endblock %}
+
 {% block js_bottom %}
     <script src="{% static "js/particles.js" %}"></script>
     <script>
@@ -227,5 +271,31 @@
         particlesJS.load('particles-js', '{% static "json/particles.json" %}', function() {
           console.log('callback - particles.js config loaded');
         });
+    </script>
+    <!-- Toaster -->
+    <script type="text/javascript">
+      toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      }
+
+      {% if messages %}
+        {% for message in messages %}
+          toastr.success('{{ message }}');
+        {% endfor %}
+      {% endif %}
     </script>
 {% endblock %}

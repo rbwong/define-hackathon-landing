@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'landingpage'
+    'bootstrap3',
+    'landingpage',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -119,10 +120,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+if DEBUG:
+    STATIC_URL = '/static/'
 
-STATIC_URL = '/static/'
+    STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_root")
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, "static"),
+        '/var/www/static/',
+    ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media_root")
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media_root")
+else:
+    STATIC_URL = '/static/'
+
+    STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+    MEDIA_URL = '/media/'
+    MEDIA_ROOT = os.path.join(BASE_DIR, "static", "media_root")

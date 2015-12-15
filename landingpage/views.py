@@ -1,13 +1,14 @@
-from .forms import TeamForm
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import CreateView
+
 from .models import Sponsor, Judge
+from .forms import TeamForm
 
-# Create your views here.
 
-
-class TeamSignUp(CreateView):
+class TeamSignUp(SuccessMessageMixin, CreateView):
     form_class = TeamForm
     template_name = "index.html"
+    success_message = "Team %(team_name)s was created successfully!"
 
     def get_context_data(self, **kwargs):
         context = super(TeamSignUp, self).get_context_data(**kwargs)

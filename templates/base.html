@@ -33,8 +33,12 @@
 
         <!-- Scrolling -->
         <link href="{% static "css/scrolling-nav.css" %}" rel="stylesheet">
+
         <!-- Animate CSS -->
         <link href="{% static "css/animate.css" %}" rel="stylesheet" type="text/css" media="all">
+
+        <!-- Toaster CSS-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 
         <script src="{% static "js/jquery.js" %}"></script><style type="text/css"></style>
         <script src="{% static "js/bootstrap.js" %}"></script>
@@ -91,6 +95,8 @@
         <script src="{% static "js/lightbox.min.js" %}"></script>
         <!-- Easing JavaScript -->
         <script src="{% static "js/jquery.easing.min.js" %}"></script>
+        <!-- Toaster JavaScript-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
         <!-- Wow Javasript -->
         <script src="{% static "js/wow.js" %}"></script>
         <script>
@@ -99,4 +105,20 @@
         {% block js_bottom %}
         {% endblock %}
     </body>
+
+    <div id = "teamsignupmodal" class = "modal fade" role = "dialog">
+        <div class = "modal-dialog">
+        <div class = "modal-content">
+            <div class = "modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Team Sign Up</h4>
+            </div>
+            <div class = "modal-body">
+                {% block form %}
+
+                {% endblock %}
+            </div>
+
+        </div>
+    </div>
 </html>

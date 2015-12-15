@@ -11,6 +11,34 @@ class TeamForm(forms.ModelForm):
                   "m3_full_name", "m3_school", "m3_course", "m3_contact_num", "m3_email",
                   "m4_full_name", "m4_school", "m4_course", "m4_contact_num", "m4_email",
                   "m5_full_name", "m5_school", "m5_course", "m5_contact_num", "m5_email", ]
+        labels = {
+            "team_name": 'Team Name',
+            "m1_full_name": 'Full Name',
+            "m1_school": 'School',
+            "m1_course": 'Course',
+            "m1_contact_num": 'Contact Number',
+            "m1_email": 'Email',
+            "m2_full_name": 'Full Name',
+            "m2_school": 'School',
+            "m2_course": 'Course',
+            "m2_contact_num": 'Contact Number',
+            "m2_email": 'Email',
+            "m3_full_name": 'Full Name',
+            "m3_school": 'School',
+            "m3_course": 'Course',
+            "m3_contact_num": 'Contact Number',
+            "m3_email": 'Email',
+            "m4_full_name": 'Full Name',
+            "m4_school": 'School',
+            "m4_course": 'Course',
+            "m4_contact_num": 'Contact Number',
+            "m4_email": 'Email',
+            "m5_full_name": 'Full Name',
+            "m5_school": 'School',
+            "m5_course": 'Course',
+            "m5_contact_num": 'Contact Number',
+            "m5_email": 'Email',
+        }
 
     def clean_contact_number(self):
         contact_number = self.cleaned_data.get('contact_number')
