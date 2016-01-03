@@ -91,6 +91,18 @@ a:hover {
     border-color: black;
 }
 
+.gray-btn {
+    color: black;
+    background-color: transparent;
+    border: 2px solid #666666;
+}
+
+.gray-btn:hover {
+    color: #333;
+    background-color: transparent;
+    border-color: black;
+}
+
 .action-btn {
     color: black;
     background-color: transparent;
@@ -373,10 +385,11 @@ h2 {
 }
 
 .header-button {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 200px;
-    margin: 0 auto;
-    display: block;
-}
+    display: block;}
 
 /* -------DEFINE------- */
 #define-section {
