@@ -222,10 +222,12 @@
 
             </div>
 
+            {% if platinum_community_partner or gold_community_partner %}
               <div class="title">
                   <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Community Partners</h1>
                   <div class="hr"></div>
               </div>
+            {% endif %}
 
               {% if platinum_community_partner %}
                 <h2>Platinum</h2>
