@@ -34,6 +34,10 @@ a:hover {
     color: #f75f5f;
 }
 
+.title-pad-top {
+    margin-top: 50px;
+}
+
 .title h1 {
     font-family: 'Oxygen', sans-serif;
     font-weight: 400;
@@ -408,6 +412,7 @@ h2 {
  .sponsor {
     margin-top: 30px;
     margin-bottom: 30px;
+
  }
 
 #define-section p {
@@ -464,7 +469,6 @@ h2 {
     /* reset the text-align */
     text-align:left;
     /* inline-block space fix */
-    margin-right:-4px;
 }
 
  .sponsor {
