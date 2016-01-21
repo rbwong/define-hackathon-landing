@@ -17,7 +17,7 @@
             </div> <br>
             <div class="container">
                 <div class="col-sm-12">
-                    <p class="header-details">06-07 February 2016 | University of the Philippines Diliman</p>
+                    <p class="header-details">January 28-30, 2016 | University of the Philippines Diliman</p>
                 </div>
             </div> <br>
             <div class="container">
@@ -25,7 +25,7 @@
                     <div class="col-sm-12 text-center">
                       <div class="btn-group">
                           <a class="header-button orange-btn btn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;" data-toggle = "modal" data-target = "#teamsignupmodal" id = "signup_button">Sign Up</a>
-                          <a target="_blank" href="https://www.google.com.ph/maps/place/School+Of+Economics/@14.6559878,121.0722379,17z/data=!3m1!4b1!4m2!3m1!1s0x3397b7645e255555:0x5fb15582967aa632?hl=en" class="header-button gray-btn btn">Venue</a>
+                          <a target="_blank" href="https://www.google.com.ph/maps/place/GT-Toyota+Asian+Center+Auditorium/@14.6567882,121.0717499,17z/data=!3m1!4b1!4m2!3m1!1s0x3397b760d4112d93:0x2e33852ee1347eab?hl=en" class="header-button gray-btn btn">Venue</a>
                       </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
 
     <section id="define-section">
         <div class="title">
-            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"><strong>#define</strong></h1>
+            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">#define</h1>
             <div class="hr"></div>
         </div>
 
@@ -54,7 +54,7 @@
 
     <section id="challenge-section">
         <div class="title">
-            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;"><strong>The Challenge</strong></h1>
+            <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">The Challenge</h1>
             <div class="hr"></div>
         </div>
 
@@ -77,7 +77,9 @@
                       <br><br>
                       What can we, programmers, software engineers, and developers, do?
                       <br><br>
-                      This is the grand challenge of <strong>#define</strong>
+                      This is the grand challenge of #define (hashdefine).
+                      <br><br>
+                      Innovation, redefined.
                       </p>
                  </div>
             </div>
@@ -95,14 +97,14 @@
             <div class="row">
               {% if organizers %}
               {% for organizer in organizers %}
-		<h2>Organized by</h2>
-		<a href = "{{organizer.link}}">
+                <h2>Organized by</h2>
+                <a href = "{{ organizer.link }}" >
                 <div class="col-sm-12">
                     <div class="row row-centered">
-                
+                    
                       <div class="sponsor col-lg-2 col-md-2 col-sm-3 col-centered">
                         <div class="media">
-                         <img src="{% get_media_prefix %}{{ organizer.picture }}" href = "{{ organizer.link }}" alt="picture">
+                         <img src="{% get_media_prefix %}{{ organizer.picture }}" alt="picture">
                           <div class="media-body">
                             <h2>{{ organizer.name }}</h2>
                           </div>
@@ -111,14 +113,13 @@
                     {% endfor %}
                     </div>
                 </div>
-		</a>
+              </a>
               {% endif %}
               {% if platinum_sponsors %}
-	      {% for sponsor in platinum_sponsors %}
                 <h2>Co-presented to by</h2>
-		<a href = {{sponsor.link}}>
                 <div class="col-sm-12">
                     <div class="row row-centered">
+                    {% for sponsor in platinum_sponsors %}
                       <div class="sponsor col-lg-2 col-md-2 col-sm-3 col-centered">
                         <div class="media">
                          <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
@@ -130,14 +131,12 @@
                     {% endfor %}
                     </div>
                 </div>
-		</a>
               {% endif %}
               {% if gold_sponsors %}
-              {% for sponsor in gold_sponsors %}
-		<h2>In Cooperation with</h2>
+                <h2>In Cooperation with</h2>
                 <div class="col-sm-12">
                     <div class="row row-centered">
-                    
+                    {% for sponsor in gold_sponsors %}
                       <div class="sponsor col-lg-2 col-md-2 col-sm-3 col-centered">
                         <div class="media">
                          <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
@@ -149,24 +148,22 @@
                     {% endfor %}
                     </div>
                 </div>
-		</a>
               {% endif %}
               {% if silver_sponsors %}
-      
-		<h2>Also brought to you by</h2>
+                <h2>Also brought to you by</h2>
                 <div class="col-sm-12">
-                    <div class="row row-centered">
-                    {% for sponsor in silver_sponsors %}
-                      <div class="sponsor col-lg-2 col-md-2 col-sm-3 col-centered">
-                        <div class="media">
-                         <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
-                          <div class="media-body">
-                            <h2>{{ sponsor.name }}</h2>
-                          </div>
+                  <div class="row row-centered">
+                  {% for sponsor in silver_sponsors %}
+                    <div class="sponsor col-lg-2 col-md-2 col-sm-3 col-centered">
+                      <div class="media">
+                       <img src="{% get_media_prefix %}{{ sponsor.picture }}" alt="picture">
+                        <div class="media-body">
+                          <h2>{{ sponsor.name }}</h2>
                         </div>
                       </div>
-                    {% endfor %}
                     </div>
+                  {% endfor %}
+                  </div>
                 </div>
               {% endif %}
               {% if bronze_sponsors %}
@@ -203,21 +200,57 @@
                     </div>
                 </div>
               {% endif %}
-              {% if community_partners %}
-                <h2>Community Partners</h2>
-                <div class="col-sm-12 row-centered">
-                    <div class="row">
-                    {% for partner in community_partners %}
-                      <div class="partner col-lg-2 col-md-2 col-sm-3 col-centered">
-                        <div class="media">
-                         <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
-                          <div class="media-body">
-                            <h2>{{ partner.name }}</h2>
-                          </div>
+                
+              <div class="title">
+                  <h1 class="wow fadeIn animated animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">Community Partners</h1>
+                  <div class="hr"></div>
+              </div>
+
+              {% if platinum_community_partner %}
+                <h2>Platinum</h2>
+                <div class = "col-sm-12 row-centered">
+                  <div class = "row">
+                    {% for partner in platinum_community_partner %}
+                      <div class = "partner col-lg-2 col md-2 col sm-3 col-centered">
+                        <div class = "media">
+                          <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
+                          <h2>{{ partner.org_name }}</h2>
                         </div>
                       </div>
                     {% endfor %}
-                    </div>
+                  </div>
+                </div>
+              {% endif %}
+              {% if transport_partner %}
+              
+                <h2>Gold</h2>
+                <div class = "col-sm-12 row-centered">
+                  <div class = "row">
+                    {% for partner in transport_partner %}
+                      <div class = "partner col-lg-2 col md-2 col sm-3 col-centered">
+                        <div class = "media">
+                          <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
+                          <h2>{{ partner.org_name }}</h2>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endif %}
+              {% if gold_community_partner %}
+              
+                <h2>Gold</h2>
+                <div class = "col-sm-12 row-centered">
+                  <div class = "row">
+                    {% for partner in gold_community_partner %}
+                      <div class = "partner col-lg-2 col md-2 col sm-3 col-centered">
+                        <div class = "media">
+                          <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
+                          <h2>{{ partner.org_name }}</h2>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
                 </div>
               {% endif %}
             </div>
@@ -250,55 +283,45 @@
                  </div>
                  <div class="col-centered col-sm-7 offset-5">
                     <h2 class="faq-header">(4) When is the deadline of registration?</h2>
-                    <p class="space"> All registration requirements must be submitted by <strong>28</strong> January 2016, 11:59 PM PST. Teams will be notified by e-mail regarding the status of their registration within 48 hours.
+                    <p class="space"> All registration requirements must be submitted by <strong>22</strong> January 2016, 11:59 PM PST. Teams will be notified by e-mail regarding the status of their registration within 48 hours.
                     </p>
                  </div>
                  <div class="col-centered col-sm-7 offset-5">
                     <h2 class="faq-header">(5) Will we be automatically in upon registration?</h2>
-                    <p class="space"> Unfortunately, we can only accommodate a certain number of teams to ensure that the participants get the best experience possible.
-                    </p>
-                 </div>
-		<div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(6) Is there an orientation for the event? </h2>
-                    <p class="space"> There will be a participants orientation (POR) on January 30 at UP Diliman. At least one representative per team must attend the POR. </p>
-                   
-                 </div>
-		<div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(7) When will the theme be announced? </h2>
-                    <p class="space"> The theme will be announced during the POR. </p>
-                    
-                 </div>
-                 <div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(8) Are we allowed to use external hardware devices (such as Raspberry Pi, Arduino)?</h2>
-                    <p class="space"> The use of such hardware devices will not be permitted.
+                    <p class="space"> Unfortunately, we can only accommodate the first thirty (30) teams to ensure that the participants get the best experience possible.
                     </p>
                  </div>
                  <div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(9) Are we restricted to any API’s?</h2>
+                    <h2 class="faq-header">(6) Are we allowed to use external hardware devices (such as Raspberry Pi, other examples here)?</h2>
+                    <p class="space"> The use of hardware devices is not allowed.
+                    </p>
+                 </div>
+                 <div class="col-centered col-sm-7 offset-5">
+                    <h2 class="faq-header">(7) Are we restricted to any API’s?</h2>
                     <p class="space"> You may use any available API’s given that you have the proper rights and permissions to do so.
                     </p>
                  </div>
                  <div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(10) Do we have to stay in the building the entire time?</h2>
+                    <h2 class="faq-header">(8) Do we have to stay in the building the entire time?</h2>
                     <p class="space"> For security and safety considerations, you may opt to go out before the “lockout period” but you may not return until that period is up.
                     </p>
                  </div>
                  <div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(11) Will our creation be our own intellectual property or will it belong to another entity?</h2>
+                    <h2 class="faq-header">(9) Will our creation be our own intellectual property or will it belong to another entity?</h2>
                     <p class="space"> All submissions remain the intellectual property of the participants or teams that conceptualized and developed them.
                  </div>
                  <div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(12) Are there prizes?</h2>
+                    <h2 class="faq-header">(10) Are there prizes?</h2>
                     <p class="space"> You can win as much as PhP 25,000. There will also be freebies during the event proper.
                     </p>
                  </div>
                  <div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(13) Is there a pitching portion?</h2>
+                    <h2 class="faq-header">(11) Is there a pitching portion?</h2>
                     <p class="space"> Yes, each team may send a maximum of two members. They will be given at most seven (7) minutes for the pitching portion.
                     </p>
                  </div>
                  <div class="col-centered col-sm-7 offset-5">
-                    <h2 class="faq-header">(14) Will our code be judged?</h2>
+                    <h2 class="faq-header">(12) Will our code be judged?</h2>
                     <p class="space"> Yes. It will be reviewed by a panel dedicated to code-review.
                     <br><br>
                     For additional questions, you may email <a href="mailto:hashdefine.hacks@gmail.com?Subject=Question" target="_top">hashdefine.hacks@gmail.com!</a>
@@ -313,7 +336,6 @@
     <form method = "POST" action = "" id = "teamsignup_form"> {% csrf_token %}
 
       <form>
-
       <h4 class="text-left">Team details</h4>
       {% bootstrap_field form.team_name %}
       <h4 class="text-left">Member 1</h4>
