@@ -132,6 +132,24 @@
                     </div>
                 </div>
               {% endif %}
+              {% if transport_partner %}
+
+                <h2>Offial Transport Partner</h2>
+                <div class = "col-sm-12 row-centered">
+                  <div class = "row">
+                    {% for partner in transport_partner %}
+                      <div class = "sponsor col-lg-2 col md-2 col sm-3 col-centered">
+                        <div class = "media">
+                          <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
+                          <div class="media-body">
+                            <h2>{{ partner.name }}</h2>
+                          </div>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endif %}
               {% if gold_sponsors %}
                 <h2>In Cooperation with</h2>
                 <div class="col-sm-12">
@@ -201,24 +219,7 @@
                 </div>
               {% endif %}
 
-              {% if transport_partner %}
 
-                <h2>Gold</h2>
-                <div class = "col-sm-12 row-centered">
-                  <div class = "row">
-                    {% for partner in transport_partner %}
-                      <div class = "sponsor col-lg-2 col md-2 col sm-3 col-centered">
-                        <div class = "media">
-                          <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
-                          <div class="media-body">
-                            <h2>{{ partner.name }}</h2>
-                          </div>
-                        </div>
-                      </div>
-                    {% endfor %}
-                  </div>
-                </div>
-              {% endif %}
             </div>
 
               <div class="title">
@@ -253,7 +254,9 @@
                       <div class = "sponsor col-lg-2 col md-2 col sm-3 col-centered">
                         <div class = "media">
                           <img src="{% get_media_prefix %}{{ partner.picture }}" alt="picture">
-                          <h2>{{ partner.name }}</h2>
+                          <div class = "media-body">
+                            <h2>{{ partner.name }}</h2>
+                          </div>
                         </div>
                       </div>
                     {% endfor %}
