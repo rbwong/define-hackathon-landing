@@ -12,12 +12,11 @@ class TeamAdmin(ImportExportModelAdmin):
     list_display = ["__unicode__", "timestamp"]
     form = TeamForm
 
-class JudgeAdmin(admin.ModelAdmin):
-    pass
+class JudgeAdmin(admin.ModelAdmin)pass
 
-class SponsorAdmin(ImportExportModelAdmin):
-    resource_class = SponsorResource
-    pass
+class SponsorAdmin(admin.ModelAdmin):
+	resource_class = TeamResource
+	pass
 
 
 

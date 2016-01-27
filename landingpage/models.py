@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.urlresolvers import reverse
+from import_export import resources
 # Create your models here.
 
 
@@ -66,8 +67,8 @@ class Sponsor(models.Model):
         ('Bronze', 'Special thanks to'),
         ('Media', 'Media Sponsors'),
         ('Community', 'Community Partners'),
-        ('Platinum Community Partner', 'Platinum Community Partner'),
-        ('Gold Community Partner', 'Gold Community Partner'),
+        ('Platinumi_C', 'Platinum Community Partner'),
+        ('Gold_C', 'Gold Community Partner'),
     )
     name = models.CharField(max_length=50, blank=False)
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
@@ -76,3 +77,15 @@ class Sponsor(models.Model):
 
     def __unicode__(self):
         return self.name
+
+
+class TeamResource(resources.ModelResource):
+
+    class Meta:
+        model = Team
+
+
+class SponsorResource(resources.ModelResource):
+
+    class Meta:
+        model = Sponsor

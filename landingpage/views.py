@@ -21,8 +21,8 @@ class TeamSignUp(SuccessMessageMixin, CreateView):
         context['media_partners'] = Sponsor.objects.filter(category='Media')
         context['community_partners'] = Sponsor.objects.filter(category='Community')
         context['judges'] = Judge.objects.all()
-        context['platinum_community_partner'] = Sponsor.objects.filter(category = 'Platinum Community Partner')
-        context['gold_community_partner'] = Sponsor.objects.filter(category = 'Gold Community Partner')
+        context['platinum_community_partner'] = Sponsor.objects.filter(category = 'Platinum_C')
+        context['gold_community_partner'] = Sponsor.objects.filter(category = 'Gold_C')
         context['transport_partner'] = Sponsor.objects.filter(category = 'Transport')
 
         return context
