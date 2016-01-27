@@ -1,5 +1,8 @@
 Django==1.9
 Pillow==3.0.0
+diff-match-patch==20110725.1
 django-bootstrap3==6.2.2
+django-import-export==0.4.2
 psycopg2==2.6.1
 pytz==2015.7
+tablib==0.10.0
